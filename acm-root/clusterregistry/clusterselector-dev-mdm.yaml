@@ -1,0 +1,10 @@
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: mdm-dev-clusters
+spec:
+  selector:
+    matchLabels:
+      owned-by-businessunit: mdm
+      environment-type: dev
+
