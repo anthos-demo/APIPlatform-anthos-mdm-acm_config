@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: mra
+  name: mra2
   annotations:
     configmanagement.gke.io/cluster-selector: mdm-test-clusters
   labels:
