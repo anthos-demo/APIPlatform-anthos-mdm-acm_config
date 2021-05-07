@@ -4,7 +4,8 @@ kind: Namespace
 metadata:
   name: mra
   annotations:
-    configmanagement.gke.io/cluster-selector: mdm-test-clusters
+    configsync.gke.io/cluster-name-selector: askdemocluster3
+    #configmanagement.gke.io/cluster-selector: mdm-test-clusters
   labels:
     istio-injection: enabled
     owned-by-businessunit: mdm
