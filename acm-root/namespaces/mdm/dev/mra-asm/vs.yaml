@@ -1,0 +1,23 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: internal-asm-gateway-dev
+spec:
+  selector:
+    istio: ingressgateway # use istio default controller
+  servers:
+  - port:
+      number: 80
+      name: tcp
+      protocol: TCP
+    hosts:
+    - "feidmdmaks002.feiaz.ferguson.com"
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: internal-gw-tls-credential # must be the same as secret
+    hosts:
+    - "feidmdmaks002.feiaz.ferguson.com"
