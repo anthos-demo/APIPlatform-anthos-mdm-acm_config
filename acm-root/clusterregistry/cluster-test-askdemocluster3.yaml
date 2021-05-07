@@ -1,0 +1,9 @@
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: askdemocluster3
+  labels:
+    name: askdemocluster3
+    owned-by-businessunit: mdm
+    environment-type: test
+
