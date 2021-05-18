@@ -1,0 +1,10 @@
+# creates namespace named "mdm-three-mra"
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mdm-three-mra
+  annotations:
+    configmanagement.gke.io/cluster-selector: mdm-dev-clusters
+  labels:
+    istio-injection: enabled
+    environment-type: dev
