@@ -1,0 +1,10 @@
+# creates namespace named "mdm-one-mra"
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mdm-one-mra
+  annotations:
+    configmanagement.gke.io/cluster-selector: mdm-common-clusters
+  labels:
+    istio-injection: enabled
+    owned-by-businessunit: mdm
