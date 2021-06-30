@@ -8,7 +8,7 @@ Repository branch created for mdm business-unit
 <h2>
 
 ```diff
-- red
+- Note: Please make sure istio operator has access to anthos workstation 
 + green
 ! orange
 # gray
